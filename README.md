@@ -1,7 +1,7 @@
 # Business Card 
 
 ## Description
-A personal business card for Scott Geleas.
+A personal command line business card for Scott Geleas.
 
 ## Usage
 ```
