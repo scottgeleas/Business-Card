@@ -29,9 +29,9 @@
         "bin/card.js",
         "bin/output"
     ],
-    "devDependencies": {
+    "type": "module",
+    "dependencies": {
         "boxen": "^6.2.1",
         "chalk": "^5.0.1"
-    },
-    "type": "module"
+    }
 }
