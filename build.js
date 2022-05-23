@@ -9,51 +9,59 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Define options for Boxen
 const options = {
-    title: chalk.bold.blueBright('Scott Geleas'),
+    title: chalk.white.bold('Scott Geleas'),
     titleAlignment: 'center',
     borderStyle: 'round',
-    float: 'center',
     padding: 1,
     margin: 1,
 };
 
 const data = {
     work: chalk.white(
-        'Teaching Assistant ' + chalk.bold.italic('@') + ' Trilogy Education'
+        'Teaching Assistant' + ' @ ' + chalk.italic('Trilogy Education')
     ),
-    // twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-    github: chalk.gray.italic('https://github.com/') + chalk.red('scottgeleas'),
+    github:
+        chalk.gray.italic('https://github.com/') +
+        chalk.greenBright.italic('scottgeleas'),
     linkedin:
         chalk.gray.italic('https://linkedin.com/in/') +
-        chalk.blueBright('scottgeleas'),
+        chalk.blueBright.italic('scottgeleas'),
     web: chalk.gray.italic(
-        'https://' +
-            chalk.green('scottgeleas') +
-            '.github.io/' +
-            chalk.magenta('React-Portfolio') +
+        'https://scottgeleas.github.io/' +
+            chalk.magentaBright.italic('React-Portfolio') +
             '/'
     ),
+    npm:
+        chalk.gray.italic('https://www.npmjs.com/~') +
+        chalk.redBright.italic('stazimo'),
 
     labelWork: chalk.white.bold('       Work:'),
-    // labelTwitter: chalk.white.bold('       Twitter:'),
     labelGitHub: chalk.white.bold('     GitHub:'),
     labelLinkedIn: chalk.white.bold('   LinkedIn:'),
     labelWeb: chalk.white.bold('    Website:'),
+    labelNpm: chalk.white.bold('        npm:'),
 };
 
 const newline = '\n';
 const work = `${data.labelWork}  ${data.work}`;
-// const twittering = `${data.labelTwitter}  ${data.twitter}`
-// const npming = `${data.labelnpm}  ${data.npm}`
 const github = `${data.labelGitHub}  ${data.github}`;
 const linkedin = `${data.labelLinkedIn}  ${data.linkedin}`;
 const web = `${data.labelWeb}  ${data.web}`;
+const npm = `${data.labelNpm}  ${data.npm}`;
 
-const output = work + newline + github + newline + linkedin + newline + web;
+const output =
+    work +
+    newline +
+    github +
+    newline +
+    linkedin +
+    newline +
+    web +
+    newline +
+    npm;
 
 fs.writeFileSync(
     path.join(__dirname, 'bin/output'),
-    chalk.white(boxen(output, options))
+    chalk.gray(boxen(output, options))
 );
