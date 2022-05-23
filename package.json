@@ -30,7 +30,7 @@
         "bin/output"
     ],
     "type": "module",
-    "dependencies": {
+    "devDependencies": {
         "boxen": "^6.2.1",
         "chalk": "^5.0.1"
     }
