@@ -26,7 +26,7 @@ const data = {
         chalk.greenBright.italic('scottgeleas'),
     linkedin:
         chalk.gray.italic('https://linkedin.com/in/') +
-        chalk.blueBright.italic('scottgeleas'),
+        chalk.cyanBright.italic('scottgeleas'),
     web: chalk.gray.italic(
         'https://scottgeleas.github.io/' +
             chalk.magentaBright.italic('React-Portfolio') +
