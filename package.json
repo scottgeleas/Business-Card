@@ -1,7 +1,7 @@
 {
-    "name": "sjg-business-card",
+    "name": "scottgeleas",
     "version": "1.1.0",
-    "description": "A personal card for Scott Geleas.",
+    "description": "A personal command line business card for Scott Geleas.",
     "main": "/bin/card.js",
     "bin": {
         "scottgeleas": "./bin/card.js"
