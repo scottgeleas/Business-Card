@@ -1,6 +1,6 @@
 {
     "name": "scottgeleas",
-    "version": "1.8.0",
+    "version": "1.9.0",
     "description": "A personal command line business card for Scott Geleas.",
     "main": "/bin/card.js",
     "bin": {
