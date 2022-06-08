@@ -18,9 +18,7 @@ const options = {
 };
 
 const data = {
-    work: chalk.white(
-        'Software Engineer' + ' @ ' + chalk.italic('Learnics')
-    ),
+    work: chalk.white('Software Engineer' + ' @ ' + chalk.italic('Learnics')),
     github:
         chalk.gray.italic('https://github.com/') +
         chalk.greenBright.italic('scottgeleas'),
